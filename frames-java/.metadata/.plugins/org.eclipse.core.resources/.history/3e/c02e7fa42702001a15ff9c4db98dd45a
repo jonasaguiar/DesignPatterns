@@ -1,0 +1,18 @@
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+		String palavra = "abcdefghij";
+		String numero = "123456789";
+		
+		System.out.println(palavra.length());
+		
+		
+		
+	}
+	
+}

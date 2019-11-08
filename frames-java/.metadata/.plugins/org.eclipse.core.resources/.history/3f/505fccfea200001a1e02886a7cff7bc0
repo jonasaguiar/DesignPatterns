@@ -1,0 +1,12 @@
+
+public class SalMinimo {
+	
+	private salMinimo = 788;
+	
+	public SalMinimo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

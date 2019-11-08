@@ -1,0 +1,88 @@
+import java.util.ArrayList;
+
+import javax.xml.bind.helpers.ParseConversionEventImpl;
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		StringTests stringtest = new StringTests();
+		
+		System.out.println("------------- Testando Strings ---------------");
+		stringtest.espacoEmBranco();
+		
+		String palavra = "abcd efghij";
+		String numero = "123456789";
+		String palavra2 = "ABCD EFGHIJ";
+		int numeromesmo = 10;
+		
+		int posição = 4;
+		String letra = "f";
+		String letra2 = "a";
+		
+		if(palavra.contains(letra)) {
+			System.out.println("A palavra " + palavra + " contém a letra " + letra.toUpperCase() + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não contém a letra " + letra + "!");
+		}stringtest.espacoEmBranco();
+		
+		
+		System.out.println("O numero na posição " + posição + " é " + palavra.charAt(posição) + "!");
+		stringtest.espacoEmBranco();
+		
+		System.out.println("Com CompareTo:");
+		if(palavra.compareTo(palavra) == 0) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}System.out.println();
+		
+		
+		System.out.println("Com Equals:");
+		if(palavra.equalsIgnoreCase(palavra)) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}stringtest.espacoEmBranco();
+		
+		if(palavra.endsWith(letra) == true) {
+			System.out.println("A palavra " + palavra + " termina com " + letra2 + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não termina com " + letra2 + "!");
+		}stringtest.espacoEmBranco();
+		
+		if(palavra.startsWith(letra2) == true) {
+			System.out.println("A palavra " + palavra + " começa com " + letra2 + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não começa com " + letra2 + "!");
+		}stringtest.espacoEmBranco();
+		
+		
+		
+		System.out.println("Os bytes da string é " + palavra.getBytes());
+		System.out.println("O hash code da string é " + palavra.hashCode());
+		System.out.println("Usando o metodo Intern, o resultado é " + palavra.intern());
+		System.out.println("O ultimo indice da String é " + palavra.lastIndexOf(palavra2));
+		System.out.println("O tamanho da string é " + palavra.length());
+		stringtest.espacoEmBranco();
+		
+		int rangefirst = 1;
+		int rangelast = 3;
+		System.out.println("A substring com os indices " + rangefirst + " e " + rangelast + " é " + palavra.substring(rangefirst, rangelast));
+		
+		System.out.println(palavra.valueOf(numeromesmo));
+		
+		String[] palavras = palavra.split(" ");
+		
+		
+		System.out.println("Usando split " + palavras);
+	}
+	
+	public void espacoEmBranco() {
+		System.out.println();
+
+	}
+	
+	
+}

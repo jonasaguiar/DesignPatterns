@@ -1,0 +1,65 @@
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		StringTests stringtest = new StringTests();
+		
+		System.out.println("------------- Testando Strings ---------------");
+		stringtest.espacoEmBranco();
+		
+		String palavra = "abcdefghij";
+		String numero = "123456789";
+		String palavra2 = "ABCDEFGHIJ";
+		int numeromesmo = 10;
+		
+		int posição = 4;
+		String letra = "f";
+		String letra2 = "i";
+		
+		if(palavra.contains(letra)) {
+			System.out.println("A palavra " + palavra + " contém a letra " + letra.toUpperCase() + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não contém a letra " + letra + "!");
+		}stringtest.espacoEmBranco();
+		
+		
+		System.out.println("O numero na posição " + posição + " é " + palavra.charAt(posição) + "!");
+		stringtest.espacoEmBranco();
+		
+		System.out.println("Com CompareTo:");
+		if(palavra.compareTo(palavra) == 0) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}System.out.println();
+		
+		
+		System.out.println("Com Equals:");
+		if(palavra.equalsIgnoreCase(palavra)) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}stringtest.espacoEmBranco();
+		
+		if(palavra.endsWith(letra) == true) {
+			System.out.println("A palavra " + palavra + " termina com " + letra2 + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não termina com " + letra2 + "!");
+		}stringtest.espacoEmBranco();
+		
+		System.out.println(palavra.getBytes());
+		System.out.println(palavra.hashCode());
+		System.out.println(palavra.intern());
+		System.out.println(palavra.lastIndexOf(palavra2));
+		
+	}
+	
+	public void espacoEmBranco() {
+		System.out.println();
+
+	}
+	
+	
+}

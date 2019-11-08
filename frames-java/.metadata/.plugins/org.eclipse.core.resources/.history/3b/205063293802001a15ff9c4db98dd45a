@@ -1,0 +1,17 @@
+package cadastroAval;
+
+public class Aluno {
+
+	CarteiraDeEstudante carteiraDeEstudante;
+	String relatorioAval;
+	
+	
+	public Aluno() {
+		this.carteiraDeEstudante = new CarteiraDeEstudante();
+		this.relatorioAval = "";
+	}
+	
+	
+	
+	
+}

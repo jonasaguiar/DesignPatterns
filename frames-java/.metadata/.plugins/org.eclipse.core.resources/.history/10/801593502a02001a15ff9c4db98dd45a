@@ -1,0 +1,56 @@
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		StringTests stringtest = new StringTests();
+		
+		String espaco = 
+		
+		String palavra = "abcdefghij";
+		String numero = "123456789";
+		String palavra2 = "ABCDEFGHIJ";
+		int numeromesmo = 10;
+		
+		int posição = 4;
+		String letra = "f";
+		
+		if(palavra.contains(letra)) {
+			System.out.println("A palavra " + palavra + " contém a letra " + letra.toUpperCase() + "!");
+		}else {
+			System.out.println("A palavra " + palavra + " não contém a letra " + letra + "!");
+		}System.out.println();
+		
+		
+		System.out.println("O numero na posição " + posição + " é " + palavra.charAt(posição) + "!");
+		System.out.println();
+		
+		System.out.println("Com CompareTo:");
+		if(palavra.compareTo(palavra) == 0) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}System.out.println();
+		
+		
+		System.out.println("Com Equals:");
+		if(palavra.equalsIgnoreCase(palavra)) {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são iguais!");
+		}else {
+			System.out.println("As palavras " + palavra + " e " + palavra2 + " são diferentes!");
+		}System.out.println();
+		
+		
+		
+		
+		
+	}
+	
+	public void espacoEmBranco() {
+		System.out.println();
+
+	}
+	
+	
+}

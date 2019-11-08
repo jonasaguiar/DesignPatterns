@@ -1,0 +1,31 @@
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+		String palavra = "abcdefghij";
+		String numero = "123456789";
+		String palavra2 = "ABCDEFGHIJ";
+		int numeromesmo = 10;
+		
+		int posição = 1;
+		
+		Char letra = "a";
+		
+		System.out.println(palavra.contains());
+		System.out.println("O numero na posição " + posição + " é " + palavra.charAt(posição));
+		
+		if(palavra.compareToIgnoreCase(palavra2) == 0) {
+			System.out.println("São Iguais!");
+		}else {
+			System.out.println("São diferentes!");
+		}
+		
+		
+		
+	}
+	
+}

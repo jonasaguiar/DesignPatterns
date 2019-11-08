@@ -1,0 +1,60 @@
+
+public class Porta {
+
+	private boolean estaAberta;
+	private String cor;
+	private int dimensaoX;
+	private int dimensaoY;
+	private int dimensãoZ;
+	
+	public Porta(String cor, int dimensaoX, int dimensaoY, int dimensaoZ) {
+		this.cor = cor;
+		this.dimensaoX = dimensaoX;
+		this.dimensaoY = dimensaoY;
+		this.dimensãoZ = dimensaoZ;
+		this.estaAberta = true;
+	}
+	
+	public void abre() {
+		this.estaAberta = true;
+	}
+	
+	public void fecha() {
+		this.estaAberta = false;
+	}
+	
+	public void pinta(String cor) {
+		this.cor = cor;
+	}
+	
+	public boolean estaAberta() {
+		return this.estaAberta;
+		}
+	
+	public static void main(String[] args) {
+		Porta porta = new Porta("Branca", 10, 20, 10);
+		
+		System.out.println(porta);
+		
+		
+		
+	}
+	
+	@Override
+	public String toString() {
+		String abertura = "";
+		if(this.estaAberta) {
+			abertura = "está aberta!";
+		}else {
+			abertura = "está fechada";
+		}
+		String mensagem = "A porta tem a cor " + cor + ", com dimensões X, Y e Z sendo respectivamente: " + dimensaoX + ", " + dimensaoY + ", " + dimensãoZ + "."; 
+		return mensagem;
+	}
+	
+}
+	
+	
+	
+	
+

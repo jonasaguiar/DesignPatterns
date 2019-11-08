@@ -1,0 +1,18 @@
+
+public class SalMinimo {
+	
+	private final double salMinimo = 788.00;
+	private double salFunc;
+	
+	public SalMinimo() {
+		this.salFunc = 0.0;
+	}
+	
+	public String receberSalario(double salarioFunc) {
+		
+		
+	}
+	
+	
+
+}

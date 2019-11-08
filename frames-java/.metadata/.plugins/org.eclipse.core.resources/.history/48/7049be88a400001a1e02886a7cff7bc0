@@ -1,0 +1,10 @@
+
+public class Ipi {
+
+	private double ipi;
+	
+	public Ipi() {
+		this.ipi = 0;
+	}
+	
+}

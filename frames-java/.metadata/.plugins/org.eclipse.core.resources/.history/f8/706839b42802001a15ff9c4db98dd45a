@@ -1,0 +1,27 @@
+
+public class StringTests {
+
+	
+	
+	public static void main(String[] args) {
+		
+		
+		String palavra = "abcdefghij";
+		String numero = "123456789";
+		String palavra2 = "ABCDEFGHIJ";
+		int numeromesmo = 10;
+		
+		System.out.println(palavra.valueOf(numeromesmo));
+		System.out.println(palavra.charAt(1));
+		
+		if(palavra.compareToIgnoreCase(palavra2) == 0) {
+			System.out.println("São Iguais!");
+		}else {
+			System.out.println("São diferentes!");
+		}
+		
+		
+		
+	}
+	
+}

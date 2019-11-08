@@ -1,0 +1,14 @@
+
+public class Peças {
+	
+	private int codigo;
+	private int quantidade;
+	private double valor;
+	
+	public Peças() {
+	
+	}
+	
+	
+	
+}

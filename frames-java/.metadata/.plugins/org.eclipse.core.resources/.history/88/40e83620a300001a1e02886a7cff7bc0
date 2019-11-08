@@ -1,0 +1,13 @@
+
+public class SalMinimo {
+	
+	private final double salMinimo = 788.00;
+	private double salFunc;
+	
+	public SalMinimo() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
+}

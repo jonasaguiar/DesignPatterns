@@ -1,0 +1,27 @@
+package cadastroAval;
+
+/*
+ * uma classe que representa uma carteira de estudante,
+contendo pelo menos o nome e o número de matrícula do aluno. Você pode definir outros
+membros dessa classe, como o número do curso, o nome da faculdade, etc. Dica: crie
+um construtor que lhe permita preencher os dados da carteira de estudante do aluno no
+ato da instanciação dos objetos dessa classe.
+ * 
+ */
+
+public class CarteiraDeEstudante {
+
+	private String nome;
+	private int matricula;
+	private String nomeDoCurso;
+	private String nomeDaFaculdade;
+	
+	public CarteiraDeEstudante(String nome, String nomedoCurso, String nomedaFaculdade) {
+		this.nome = nome;
+		this.nomeDoCurso = nomedoCurso;
+		this.nomeDaFaculdade = nomedaFaculdade
+		
+	}
+	
+	
+}

@@ -1,0 +1,39 @@
+package cadastroAval;
+
+public class Avaliacao {
+	
+	private double prova1;
+	private double prova2;
+	private double trabalho1;
+	private double trabalho2;
+	private double trabalho3;
+	private double trabalho4;
+	
+	public Avaliacao(double prova1, double prova2, double trabalho1, double trabalho2, double trabalho3, double trabalho4) {
+		this.prova1 = prova1;
+		this.prova2 = prova2;
+		this.trabalho1 = trabalho1;
+		this.trabalho2 = trabalho2;
+		this.trabalho3 = trabalho3;
+		this.trabalho4 = trabalho4;
+	}
+	
+	public String relatorio() {
+		String mensagem = "";
+		double notafinal = 0.0;
+		String situacao = "";
+		notafinal =+ ((prova1+prova2)*0.25 ) + ((trabalho1 + trabalho2 + trabalho3 + trabalho4)*0.5);
+		if(notafinal > 7) {
+			situacao = "Aprovado";
+		}else if(nota < 4) {
+			situacao = "Reprovado";
+		}else {
+			situacao = "na Final";
+		}
+		
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,9 @@
+package cadastroAval;
+
+public class Aluno {
+
+	CarteiraDeEstudante carteiraDeEstudante = new CarteiraDeEstudante();
+	String relatorioAval;
+	
+	
+}

@@ -1,0 +1,26 @@
+
+public class Ipi {
+
+	private double ipi;
+	Peças peça1;
+	Peças peça2;
+	
+	public Ipi() {
+		this.ipi = 0;
+	}
+	
+	private void atualizaIpi(int ipi) {
+		this.ipi = ipi;
+	}
+	
+	public String recebeValores(int ipi, int codigoPç1, double valorPç1, int qntdPç1,int codigoPç2, double valorPç2, int qntdPç2) {
+		atualizaIpi(ipi);
+		
+	}
+	
+	private void criarPçs(int codigoPç1, double valorPç1, int qntdPç1,int codigoPç2, double valorPç2, int qntdPç2) {
+		peça1 = new Peças(codigoPç1, qntdPç1, valorPç1);
+		peça2 = new Peças(codigoPç2, qntdPç2, valorPç2);
+	}
+	
+}

@@ -1,0 +1,18 @@
+
+public class Idade {
+	
+	int idade;
+	
+	public Idade() {
+		this.idade = 0;
+	}
+	
+	public void receberIdade(int anos, int meses, int dias) {
+		this.idade = idade;
+	}
+	
+	
+	
+	
+
+}

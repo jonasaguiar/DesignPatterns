@@ -1,0 +1,37 @@
+
+public class Idade {
+	
+	int anos;
+	int meses;
+	int dias;
+	
+	int diastotais = 0;
+	
+	public Idade() {
+		this.anos = 0;
+		this.meses = 0;
+		this.dias = 0;
+	}
+	
+	public void receberIdade(int anos, int meses, int dias) {
+		this.anos = anos;
+		this.meses = meses;
+		this.dias = dias;
+		calculandoDias();
+		
+		
+	}
+	
+	public void calculandoDias() {
+		diastotais = (anos* 365) + (meses*30) + dias; 
+	}
+	
+	public String imprimirDias() {
+		System.out.println("Você já viveu " + diastotais + " dias!");
+	}
+	
+	
+	
+	
+
+}

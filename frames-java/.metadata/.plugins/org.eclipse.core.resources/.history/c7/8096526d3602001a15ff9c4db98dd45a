@@ -1,0 +1,10 @@
+package cadastroAval;
+
+public class Avaliacao {
+	
+	private double nota1;
+	private double nota2;
+	private double trabalho1;
+	
+
+}
