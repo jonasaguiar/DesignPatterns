@@ -18,6 +18,7 @@ public class Agenda {
 	}
 	
 	public Contato buscarContato(String nome) {
+		
 		for(int i =0; i<contatos.length; i++) {
 			if(contatos[i].getNome().equals(nome)) {
 				return contatos[i];
